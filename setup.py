@@ -21,7 +21,7 @@ setup(
     install_requires=[
         "click == 8.0",
         "pyspark == 3.5.2",
-        "requests == 2.32.3",
+        "requests >= 2.32.4",
     ],
     extras_require={
         "test": [
