@@ -5,8 +5,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install -y software-properties-common
-RUN apt-get install -y python3-pip
-RUN apt install -y python3.12-venv
+RUN apt-get install -y python3 python3-pip python3-venv
 RUN apt-get install -y openjdk-8-jdk
 
 COPY ./data-pipeline /home/ubuntu/data-pipeline
@@ -20,3 +19,4 @@ ENV PATH="${VIRTUAL_ENV}/bin:$PATH"
 
 RUN pip install -e .[test]
 CMD ["breweries", "--run-all"]
+

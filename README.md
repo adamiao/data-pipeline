@@ -30,7 +30,7 @@ Finally, the dependencies for this tool are:
 - Python 3.10+
 - Click 8.0
 - PySpark 3.5.2
-- Requests 2.32.3
+- Requests 2.32.4
 - pytest 7.0.0
 - [optional] Docker Engine
 
